@@ -1,16 +1,20 @@
 import path from 'path';
+import webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 module.exports = {
-	mode: 'development',
+	mode: 'production',
   entry: './client/index.js',
   output: {
-		path: path.resolve(__dirname, 'src'),
+		path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',    
 	},
-	devtool: 'inline-source-map',
+	devtool: 'source-map',
 	target: "web",
 	plugins: [
+		new webpack.LoaderOptionsPlugin({
+		minimize: true
+		}),
 		new HtmlWebpackPlugin({
 			template: 'client/index.html',
 			inject: true
