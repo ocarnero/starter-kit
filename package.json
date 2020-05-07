@@ -4,9 +4,9 @@
   "description": "Development starter configuration",
   "main": "index.js",
   "scripts": {
-    "prestart": "node devScripts/startMsg.js",
+    "prestart": "babel-node devScripts/startMsg.js",
     "start": "npm-run-all --parallel security-check open:src",
-    "open:src": "node devScripts/devServer.js",
+    "open:src": "babel-node devScripts/devServer.js",
     "security-check": "npm audit --audit-level high"
   },
   "repository": {
@@ -20,6 +20,10 @@
   },
   "homepage": "https://github.com/ocarnero/starter-kit#readme",
   "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.6",
     "chalk": "^4.0.0",
     "express": "^4.17.1",
     "npm-run-all": "^4.1.5",
