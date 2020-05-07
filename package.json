@@ -1,0 +1,19 @@
+{
+  "name": "starter-kit",
+  "version": "1.0.0",
+  "description": "Development starter configuration",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ocarnero/starter-kit.git"
+  },
+  "author": "OAC",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ocarnero/starter-kit/issues"
+  },
+  "homepage": "https://github.com/ocarnero/starter-kit#readme"
+}
