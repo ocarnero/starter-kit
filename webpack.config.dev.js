@@ -3,7 +3,7 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 module.exports = {
 	mode: 'development',
-  entry: './client/index.js',
+  entry: './src/index.js',
   output: {
 		path: path.resolve(__dirname, 'src'),
     filename: 'bundle.js',    
@@ -12,7 +12,7 @@ module.exports = {
 	target: "web",
 	plugins: [
 		new HtmlWebpackPlugin({
-			template: 'client/index.html',
+			template: 'src/index.html',
 			inject: true
 		}),
 	],

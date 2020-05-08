@@ -1,5 +1,5 @@
-import '../client/index.css';
-import '../client/index.scss';
+import '../src/index.css';
+import '../src/index.scss';
 import numeral from 'numeral';
 
 const courseValue = numeral(1000).format('$0,0.00');

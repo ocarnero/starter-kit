@@ -4,7 +4,7 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 module.exports = {
 	mode: 'production',
-  entry: './client/index.js',
+  entry: './src/index.js',
   output: {
 		path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',    
@@ -16,7 +16,7 @@ module.exports = {
 		minimize: true
 		}),
 		new HtmlWebpackPlugin({
-			template: 'client/index.html',
+			template: 'src/index.html',
 			inject: true
 		}),
 	],
